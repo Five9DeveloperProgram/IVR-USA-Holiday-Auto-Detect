@@ -28,5 +28,10 @@ Variable 'isHoliday' will equal 'true' or 'false' depending on whether today's d
 ## Recorded Instructions
 [Watch the howto video](https://fivn-my.sharepoint.com/:v:/g/personal/jsosebee_five9_com/EVVSIL-g35JKlP1k89gBB7sBjvWTPOaMVcNdPjY0DUU47g)
 
+## Download
+1. [Click here to download the ZIP archive](https://github.com/Five9DeveloperProgram/IVR-USA-Holiday-Auto-Detect/blob/master/checkHoliday.zip?raw=true)
+1. Secondly, open a new IVR in the editor > Actions > Restore > choose the checkHoliday.zip file from step one > Restore
+1. Enjoy USA auto-detected holidays!
+
 ## Warning!
 **Do not** forget to re-comment out line 55 of the function once testing is complete.
