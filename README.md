@@ -35,3 +35,7 @@ Variable 'isHoliday' will equal 'true' or 'false' depending on whether today's d
 
 ## Warning!
 **Do not** forget to re-comment out line 55 of the function once testing is complete.
+
+## Version Changelog
+* 1.0 Initial release
+* 1.1 Current release: modified line 55 to change the default test format from ("yyyy-mm-dd") to (yyyy,mm,dd) where mm starts at 0 for January, 11 for December. When using ("yyyy-mm-dd"), sometimes the function would apply a timezone offset which could change the date.
