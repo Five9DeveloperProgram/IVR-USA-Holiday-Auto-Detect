@@ -26,7 +26,7 @@ Supported Holidays (exactly the value returned by variable 'holiday'):
 Variable 'isHoliday' will equal 'true' or 'false' depending on whether today's date matches one declared in the function.
 
 ## Recorded Instructions
-[Watch the howto video](https://fivn-my.sharepoint.com/:v:/g/personal/jsosebee_five9_com/EVVSIL-g35JKlP1k89gBB7sBjvWTPOaMVcNdPjY0DUU47g)
+[Watch the howto video](https://github.com/Five9DeveloperProgram/IVR-USA-Holiday-Auto-Detect/blob/master/Walkthrough.mp4?raw=true)
 
 ## Download
 1. [Click here to download the ZIP archive](https://github.com/Five9DeveloperProgram/IVR-USA-Holiday-Auto-Detect/blob/master/checkHoliday.zip?raw=true)
