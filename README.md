@@ -9,10 +9,12 @@ Supported Holidays (exactly the value returned by variable 'holiday'):
 * Presidents Day
 * Valentines Day
 * Good Friday
+* Tax Day (observed)
 * Easter
 * Mothers Day
 * Memorial Day
 * Fathers Day
+* Juneteenth (observed)
 * Independence Day
 * Labor Day
 * Columbus Day
@@ -38,4 +40,5 @@ Variable 'isHoliday' will equal 'true' or 'false' depending on whether today's d
 
 ## Version Changelog
 * 1.0 Initial release
-* 1.1 Current release: modified line 55 to change the default test format from ("yyyy-mm-dd") to (yyyy,mm,dd) where mm starts at 0 for January, 11 for December. When using ("yyyy-mm-dd"), sometimes the function would apply a timezone offset which could change the date.
+* 1.1 Modified line 55 to change the default test format from ("yyyy-mm-dd") to (yyyy,mm,dd) where mm starts at 0 for January, 11 for December. When using ("yyyy-mm-dd"), sometimes the function would apply a timezone offset which could change the date.
+* 1.2 Current release: added Juneteenth (technically June 19) and Tax Day (typically April 15), with the additional handling of when these fall on a Saturday or Sunday, the observed date is adjusted from Saturday to the preceding Friday and Sunday to the following Monday.
