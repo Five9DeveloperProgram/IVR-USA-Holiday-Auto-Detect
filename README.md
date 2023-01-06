@@ -1,42 +1,41 @@
-# IVR-USA-Holiday-Auto-Detect
-This IVR supports automatic calculation of USA holidays.
-
-**Use case**: import this IVR into Virtual Contact Center, call it from other parent IVRs, return to the calling IVR optionally two variables: 1) isHoliday and 2) holiday. The variables are then used in the parent IVR to support either generic or specific holiday functionality.
-
-Supported Holidays (exactly the value returned by variable 'holiday'):
-* New Years Day
-* MLK Day
-* Presidents Day
-* Valentines Day
-* Good Friday
-* Tax Day (observed)
-* Easter
-* Mothers Day
-* Memorial Day
-* Fathers Day
-* Juneteenth (observed)
-* Independence Day
-* Labor Day
-* Columbus Day
-* Thanksgiving
-* Black Friday
-* Christmas Eve
-* Christmas Day
-* New Years Eve
-* Any other day will see 'holiday' = 'No Holiday'
+No longer need to edit JS code.  Use case module to set/clear holidays that are derived from the JS code. 
+The 3 modules, the case, set, and clear modules can be moved to parent IVRs for cases where varying 
+BU’s have different holidays (i.e. integrators, etc).  Test Holiday is now fixed at 12/25/2022 so you only  
+need to set the testmode to 1 to test functionality. 
+ 
+The observed value can now be set to 3 condistions. 
+0 – Only actual holidays are set 
+1 – Actual and observed holidays are set (Friday prior to Saturday and Monday following Sunday). 
+2 – only Monday following Sunday is set to accommodate customer that are open on Saturdays and 
+	and don’t observe on Fridays. 
+	
+Holidays Supported:
+	New Years Day
+	Martin Luther King Day
+	Valentines Day
+	Presidents Day
+	Good Friday
+	Tax Day
+	Easter Sunday
+	Mothers Day
+	Memorial Day
+	Fathers Day
+	Juneteenth
+	Independence Day
+	Parents Day
+	Labor Day
+	Grandparents Day
+	Columbus Day (Indigenous peoples day)
+	Veterans Day
+	Thanksgiving Eve
+	Thanksgiving Day
+	Black Friday
+	Christmas Eve
+	Christmas Day
+	New Years Eve
+	Any other day will see 'holiday' = 'No Holiday'
 
 Variable 'isHoliday' will equal 'true' or 'false' depending on whether today's date matches one declared in the function.
-
-## Recorded Instructions
-[Watch the howto video](https://github.com/Five9DeveloperProgram/IVR-USA-Holiday-Auto-Detect/blob/master/Walkthrough.mp4?raw=true)
-
-## Download
-1. [Click here to download the ZIP archive](https://github.com/Five9DeveloperProgram/IVR-USA-Holiday-Auto-Detect/blob/master/checkHoliday.zip?raw=true)
-1. Secondly, open a new IVR in the editor > Actions > Restore > choose the checkHoliday.zip file from step one > Restore
-1. Enjoy USA auto-detected holidays!
-
-## Warning!
-**Do not** forget to re-comment out line 55 of the function once testing is complete.
 
 ## Version Changelog
 * 1.0 Initial release
